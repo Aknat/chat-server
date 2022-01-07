@@ -14,8 +14,12 @@ public class MessageList {
 	public static MessageList getInstance() {
 		return msgList;
 	}
-  
-  	private MessageList() {
+
+	public List<Message> getList() {
+		return list;
+	}
+
+	private MessageList() {
 		gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
 	}
 	

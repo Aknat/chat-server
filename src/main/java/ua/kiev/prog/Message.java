@@ -16,6 +16,12 @@ public class Message {
 		this.text = text;
 	}
 
+	public Message(String from, String to, String text) {
+		this.from = from;
+		this.to = to;
+		this.text = text;
+	}
+
 	public String toJSON() {
 		Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
 		return gson.toJson(this);
@@ -65,4 +71,5 @@ public class Message {
 	public void setText(String text) {
 		this.text = text;
 	}
+
 }

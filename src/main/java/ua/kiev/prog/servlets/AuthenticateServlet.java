@@ -1,7 +1,5 @@
 package ua.kiev.prog.servlets;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -9,7 +7,6 @@ import ua.kiev.prog.User;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
-import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
@@ -98,5 +95,3 @@ public class AuthenticateServlet extends HttpServlet {
         return isValid;
     }
 }
-
-

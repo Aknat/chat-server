@@ -12,7 +12,6 @@ public class User {
         this.password = password;
     }
 
-
     public String toJSON() {
         Gson gson = new GsonBuilder().create();
         return gson.toJson(this);

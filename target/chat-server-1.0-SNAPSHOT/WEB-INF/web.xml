@@ -12,6 +12,15 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>GetList</servlet-name>
 		<url-pattern>/get</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>GetPrivateList</servlet-name>
+		<servlet-class>ua.kiev.prog.servlets.GetPrivateListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetPrivateList</servlet-name>
+		<url-pattern>/privatechat</url-pattern>
+	</servlet-mapping>
 	
 	<servlet>
 		<servlet-name>Add</servlet-name>

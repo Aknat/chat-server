@@ -30,9 +30,6 @@ public class GetListServlet extends HttpServlet {
 			OutputStream os = resp.getOutputStream();
             byte[] buf = json.getBytes(StandardCharsets.UTF_8);
 			os.write(buf);
-
-			//PrintWriter pw = resp.getWriter();
-			//pw.print(json);
 		}
 	}
 }
