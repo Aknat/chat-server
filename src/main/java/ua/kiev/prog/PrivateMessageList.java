@@ -9,7 +9,7 @@ import java.util.List;
 
 public class PrivateMessageList {
 
-    public List<Message> privateList = new LinkedList<>();
+    private List<Message> privateList = new LinkedList<>();
     private final Gson gson;
 
     PrivateMessageList() {
